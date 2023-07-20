@@ -5163,13 +5163,8 @@ LSPServer-1.7.1"|>],
   "Out[886]=",ExpressionUUID->"f2e626ee-57b8-41a2-98e6-ffeca3bc35be"]
 }, Open  ]]
 },
-<<<<<<< HEAD
-WindowSize->{726., 765.75},
-WindowMargins->{{18, Automatic}, {Automatic, 0}},
-=======
 WindowSize->{960, 773},
 WindowMargins->{{18, Automatic}, {0, Automatic}},
->>>>>>> 544bea8347568a241b1502a33c0759a1efe02b1d
 Magnification:>1. Inherited,
 FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
 StyleDefinitions->"Default.nb",
