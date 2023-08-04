@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7148,        209]
-NotebookOptionsPosition[      6228,        184]
-NotebookOutlinePosition[      6624,        200]
-CellTagsIndexPosition[      6581,        197]
+NotebookDataLength[      7202,        209]
+NotebookOptionsPosition[      6277,        184]
+NotebookOutlinePosition[      6678,        200]
+CellTagsIndexPosition[      6635,        197]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -91,9 +91,9 @@ Cell[BoxData[
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`a$$], -10, 10}}, Typeset`size$$ = {509., {31., 36.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
-    
+      Hold[$CellContext`a$$], -10, 10}}, Typeset`size$$ = {
+    360., {175., 179.35058633855078`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`a$$ = -10}, 
       "ControllerVariables" :> {}, 
@@ -109,7 +109,7 @@ Cell[BoxData[
            $CellContext`c[$CellContext`a$$]]}], 
       "Specifications" :> {{$CellContext`a$$, -10, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{553., {76., 82.}},
+     ImageSizeCache->{410., {219.13403309800196`, 224.86596690199804`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -184,7 +184,7 @@ Cell[BoxData["10.628147074104549`"], "Output",
 },
 WindowSize->{808, 674},
 WindowMargins->{{28, Automatic}, {36, Automatic}},
-FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"9ce2e0e9-5adb-451c-9098-7337c7377702"
 ]
@@ -200,16 +200,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 452, 12, 30, "Input",ExpressionUUID->"056352b5-bc12-43ad-8834-6a0c639fe852"],
-Cell[1035, 36, 400, 10, 50, "Output",ExpressionUUID->"97ba70f8-fb5e-4e27-a707-ba3a6b33519c"]
+Cell[580, 22, 452, 12, 28, "Input",ExpressionUUID->"056352b5-bc12-43ad-8834-6a0c639fe852"],
+Cell[1035, 36, 400, 10, 48, "Output",ExpressionUUID->"97ba70f8-fb5e-4e27-a707-ba3a6b33519c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1472, 51, 1140, 33, 94, "Input",ExpressionUUID->"b2606545-2631-4fa2-b022-5cebd4351dd7"],
-Cell[2615, 86, 1758, 38, 200, "Output",ExpressionUUID->"9eeeb8c3-9ff1-4d79-827d-5d30a325b404"]
+Cell[1472, 51, 1140, 33, 86, "Input",ExpressionUUID->"b2606545-2631-4fa2-b022-5cebd4351dd7"],
+Cell[2615, 86, 1807, 38, 463, "Output",ExpressionUUID->"9eeeb8c3-9ff1-4d79-827d-5d30a325b404"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4410, 129, 1628, 47, 136, "Input",ExpressionUUID->"b928ae47-8e41-4e7f-a164-b96581b53618"],
-Cell[6041, 178, 171, 3, 34, "Output",ExpressionUUID->"a729867a-445c-4807-b036-080954608ae1"]
+Cell[4459, 129, 1628, 47, 124, "Input",ExpressionUUID->"b928ae47-8e41-4e7f-a164-b96581b53618"],
+Cell[6090, 178, 171, 3, 32, "Output",ExpressionUUID->"a729867a-445c-4807-b036-080954608ae1"]
 }, Open  ]]
 }
 ]
