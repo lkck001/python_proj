@@ -1,0 +1,209 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6634,        201]
+NotebookOptionsPosition[      5730,        178]
+NotebookOutlinePosition[      6145,        194]
+CellTagsIndexPosition[      6102,        191]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"integralA", "=", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"3", "x"}], "+", 
+        RowBox[{"2", "y"}]}], ")"}], "^", "7"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"integralB", "=", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Cos", "[", "x", "]"}], "*", 
+       RowBox[{"Sin", "[", "y", "]"}]}], ")"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "Pi"}], "/", "2"}], ",", 
+       RowBox[{"Pi", "/", "2"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", 
+       RowBox[{"Pi", "/", "2"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"integralC", "=", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"x", "/", "y"}], "+", 
+       RowBox[{"y", "/", "x"}]}], ")"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "2", ",", "4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "1", ",", "2"}], "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"integralD", "=", 
+    RowBox[{"Integrate", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Tan", "[", "x", "]"}], "*", 
+        RowBox[{
+         RowBox[{"Sec", "[", "y", "]"}], "^", "2"}]}], ")"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", 
+        RowBox[{"Pi", "/", "4"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", "0", ",", 
+        RowBox[{"Pi", "/", "4"}]}], "}"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<The value of the first integral is: \>\"", ",", "integralA"}],
+    "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<The value of the second integral is: \>\"", ",", 
+    RowBox[{"N", "[", "integralB", "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<The value of the third integral is: \>\"", ",", "integralC"}],
+    "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+   "\"\<The value of the fourth integral is: \>\"", ",", "integralD"}], "]"}],
+   ";"}]}], "Input",
+ CellChangeTimes->{{3.900097261360958*^9, 3.900097261360958*^9}, {
+  3.9000973643823614`*^9, 3.9000973901703525`*^9}, {3.900098779471537*^9, 
+  3.90009879272567*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"adf5f20f-d81d-47ca-bd96-8d900826f38d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The value of the first integral is: \"\>", "\[InvisibleSpace]", 
+   FractionBox["35795", "8"]}],
+  SequenceForm["The value of the first integral is: ", 
+   Rational[35795, 8]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.9000972638056583`*^9, {3.900097372084426*^9, 3.9000973915573454`*^9}, {
+   3.9000987884958906`*^9, 3.900098794223253*^9}},
+ CellLabel->
+  "During evaluation of \
+In[33]:=",ExpressionUUID->"c0ee4ada-c874-4d19-95ef-8ea93a55f8ae"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The value of the second integral is: \"\>", 
+   "\[InvisibleSpace]", "2.`"}],
+  SequenceForm["The value of the second integral is: ", 2.],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.9000972638056583`*^9, {3.900097372084426*^9, 3.9000973915573454`*^9}, {
+   3.9000987884958906`*^9, 3.900098794228257*^9}},
+ CellLabel->
+  "During evaluation of \
+In[33]:=",ExpressionUUID->"13b802b6-da3c-479c-b9e2-278f5998bea4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The value of the third integral is: \"\>", "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{"15", " ", 
+     RowBox[{"Log", "[", "2", "]"}]}], "2"]}],
+  SequenceForm["The value of the third integral is: ", Rational[15, 2] Log[2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.9000972638056583`*^9, {3.900097372084426*^9, 3.9000973915573454`*^9}, {
+   3.9000987884958906`*^9, 3.9000987942332616`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[33]:=",ExpressionUUID->"8f1abf41-62cb-41d1-8707-fa11d047e03d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The value of the fourth integral is: \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{"Log", "[", "2", "]"}], "2"]}],
+  SequenceForm["The value of the fourth integral is: ", Rational[1, 2] Log[2]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.9000972638056583`*^9, {3.900097372084426*^9, 3.9000973915573454`*^9}, {
+   3.9000987884958906`*^9, 3.9000987942352633`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[33]:=",ExpressionUUID->"da8bd12f-bd49-44bb-858c-28c0b3a7ee14"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"3", "x"}], "+", 
+      RowBox[{"2", "y"}]}], ")"}], "^", "7"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input",ExpressionUUID\
+->"bfb8212e-3346-4b7e-9f25-7a0ab70ccee6"]
+},
+WindowSize->{860.25, 624.75},
+WindowMargins->{{Automatic, -1128.75}, {6.75, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"dd7140d6-2686-4e5a-bdaa-abb31117af95"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2614, 79, 181, "Input",ExpressionUUID->"adf5f20f-d81d-47ca-bd96-8d900826f38d"],
+Cell[CellGroupData[{
+Cell[3219, 105, 507, 12, 38, "Print",ExpressionUUID->"c0ee4ada-c874-4d19-95ef-8ea93a55f8ae"],
+Cell[3729, 119, 469, 11, 22, "Print",ExpressionUUID->"13b802b6-da3c-479c-b9e2-278f5998bea4"],
+Cell[4201, 132, 564, 13, 38, "Print",ExpressionUUID->"8f1abf41-62cb-41d1-8707-fa11d047e03d"],
+Cell[4768, 147, 542, 13, 38, "Print",ExpressionUUID->"da8bd12f-bd49-44bb-858c-28c0b3a7ee14"]
+}, Open  ]]
+}, Open  ]],
+Cell[5337, 164, 389, 12, 28, "Input",ExpressionUUID->"bfb8212e-3346-4b7e-9f25-7a0ab70ccee6"]
+}
+]
+*)
+
