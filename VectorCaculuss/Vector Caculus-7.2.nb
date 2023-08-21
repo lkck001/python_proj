@@ -1,0 +1,265 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9080,        257]
+NotebookOptionsPosition[      7981,        235]
+NotebookOutlinePosition[      8379,        251]
+CellTagsIndexPosition[      8336,        248]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"VectorPlot", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "y"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.901589556190537*^9, 3.901589602668556*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"bd158d74-deb2-4362-a5b9-986038eebefd"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"VectorPlot3D", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Sin", "[", "z", "]"}], ",", 
+      RowBox[{"Cos", "[", "z", "]"}], ",", 
+      RowBox[{"-", 
+       RowBox[{"Power", "[", 
+        RowBox[{
+         RowBox[{"x", "*", "y"}], ",", 
+         RowBox[{"1", "/", "3"}]}], "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "1", ",", "10"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "1", ",", "10"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", "1", ",", "10"}], "}"}]}], "]"}], "\n", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.9015896215898657`*^9, 3.901589622700219*^9}, {
+  3.90159315849444*^9, 3.901593159541375*^9}, {3.901593192525058*^9, 
+  3.901593199023449*^9}, {3.901593237938692*^9, 3.9015932507283077`*^9}, {
+  3.901593304963785*^9, 3.901593321175425*^9}, {3.901593469525427*^9, 
+  3.901593475303255*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"f37c6ac1-64bb-490a-9f44-2b0479837a54"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"ParametricPlot3D", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Cos", "[", "theta", "]"}], "^", "3"}], ",", 
+        RowBox[{
+         RowBox[{"Sin", "[", "theta", "]"}], "^", "3"}], ",", "theta"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"theta", ",", "0", ",", "t"}], "}"}], ",", 
+      RowBox[{"PlotRange", "->", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", 
+           RowBox[{"7", " ", 
+            RowBox[{"Pi", "/", "2"}]}]}], "}"}]}], "}"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0.001", ",", "\"\<Theta\>\""}], "}"}], ",", "0", 
+      ",", 
+      RowBox[{"7", " ", 
+       RowBox[{"Pi", "/", "2"}]}]}], "}"}]}], "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.901593706299426*^9, 3.901593707480421*^9}, {
+  3.901593800067212*^9, 3.901593800748822*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"2833e014-b800-4072-bce0-181d3b75e153"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.901594087082437*^9, 
+  3.901594095425859*^9}},ExpressionUUID->"0cb83c1a-16df-4d5a-912d-\
+3d7966cdde49"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "the", " ", "curve", " ", "c", 
+    RowBox[{"(", "t", ")"}]}], "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"c", "[", "t_", "]"}], ":=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Cos", "[", "t", "]"}], "^", "3"}], ",", 
+      RowBox[{
+       RowBox[{"Sin", "[", "t", "]"}], "^", "3"}], ",", "t"}], "}"}]}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Define", " ", "the", " ", "vector", " ", "field", " ", "F"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"F", "[", 
+     RowBox[{"{", 
+      RowBox[{"x_", ",", "y_", ",", "z_"}], "}"}], "]"}], ":=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Sin", "[", "z", "]"}], ",", 
+      RowBox[{"Cos", "[", "z", "]"}], ",", 
+      RowBox[{"-", 
+       RowBox[{"Power", "[", 
+        RowBox[{
+         RowBox[{"x", "*", "y"}], ",", 
+         RowBox[{"1", "/", "3"}]}], "]"}]}]}], "}"}]}], "\[IndentingNewLine]",
+    "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Generate", " ", "the", " ", "curve"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"curve", "=", 
+     RowBox[{"ParametricPlot3D", "[", 
+      RowBox[{
+       RowBox[{"c", "[", "t", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"7", " ", 
+          RowBox[{"Pi", "/", "2"}]}]}], "}"}], ",", 
+       RowBox[{"PlotStyle", "->", "Thick"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{
+     "Generate", " ", "vectors", " ", "along", " ", "the", " ", "curve"}], 
+     ",", 
+     RowBox[{"filtering", " ", "out", " ", "complex", " ", "vectors"}]}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"vectors", "=", 
+     RowBox[{"Select", "[", 
+      RowBox[{
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"With", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"point", "=", 
+              RowBox[{"c", "[", "t", "]"}]}], ",", 
+             RowBox[{"vec", "=", 
+              RowBox[{"F", "[", 
+               RowBox[{"c", "[", "t", "]"}], "]"}]}]}], "}"}], ",", 
+           RowBox[{"Arrow", "[", 
+            RowBox[{"{", 
+             RowBox[{"point", ",", 
+              RowBox[{"point", "+", 
+               RowBox[{"0.2", " ", 
+                RowBox[{"Normalize", "[", "vec", "]"}]}]}]}], "}"}], "]"}]}], 
+          "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "0", ",", 
+           RowBox[{"7", " ", 
+            RowBox[{"Pi", "/", "2"}]}], ",", "0.5"}], "}"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"FreeQ", "[", 
+         RowBox[{"#", ",", "Complex"}], "]"}], "&"}]}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{"Show", "[", 
+      RowBox[{"curve", ",", 
+       RowBox[{"Graphics3D", "[", 
+        RowBox[{"{", 
+         RowBox[{"Red", ",", 
+          RowBox[{"Arrowheads", "[", "Medium", "]"}], ",", "vectors", ",", 
+          RowBox[{"Sphere", "[", 
+           RowBox[{
+            RowBox[{"c", "[", "sliderT", "]"}], ",", "0.1"}], "]"}]}], "}"}], 
+        "]"}], ",", 
+       RowBox[{"Boxed", "->", "True"}], ",", 
+       RowBox[{"Axes", "->", "True"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"sliderT", ",", "0", ",", "\"\<Position on Curve\>\""}], 
+        "}"}], ",", "0", ",", 
+       RowBox[{"7", " ", 
+        RowBox[{"Pi", "/", "2"}]}]}], "}"}]}], "]"}], "\n"}]}]], "Input",
+ CellChangeTimes->{{3.901594614583352*^9, 3.901594614586693*^9}},
+ CellLabel->"In[61]:=",ExpressionUUID->"3420ad73-3d3c-43e1-a4d7-c7340684e8b3"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9015956473744507`*^9, 
+  3.901595651346727*^9}},ExpressionUUID->"32bd6356-0e4f-4b1e-ae04-\
+2d4fe07c4a05"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.901594707405898*^9, 
+  3.9015947118645267`*^9}},ExpressionUUID->"fa0757b0-9697-4e0a-80da-\
+8537a4db42fc"],
+
+Cell[BoxData["\n"], "Input",
+ CellChangeTimes->{{3.901594102521575*^9, 3.9015941025248957`*^9}, {
+   3.901594165807482*^9, 3.901594167729517*^9}, 3.901594256820881*^9, {
+   3.901594329521047*^9, 3.9015943366562634`*^9}, {3.901594466768506*^9, 
+   3.901594467737933*^9}},
+ CellLabel->"",ExpressionUUID->"785c335c-5530-4baf-8d14-4fc4950a9bbe"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.901594713488165*^9, 
+  3.90159471700182*^9}},ExpressionUUID->"05056bd4-0b98-448c-8281-\
+288532fd794f"]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{401, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4798498c-e817-463c-8522-6539a4bbd7a8"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 477, 13, 52, "Input",ExpressionUUID->"bd158d74-deb2-4362-a5b9-986038eebefd"],
+Cell[1038, 35, 1007, 25, 73, "Input",ExpressionUUID->"f37c6ac1-64bb-490a-9f44-2b0479837a54"],
+Cell[2048, 62, 1278, 37, 52, "Input",ExpressionUUID->"2833e014-b800-4072-bce0-181d3b75e153"],
+Cell[3329, 101, 152, 3, 30, "Input",ExpressionUUID->"0cb83c1a-16df-4d5a-912d-3d7966cdde49"],
+Cell[3484, 106, 3681, 105, 283, "Input",ExpressionUUID->"3420ad73-3d3c-43e1-a4d7-c7340684e8b3"],
+Cell[7168, 213, 154, 3, 30, "Input",ExpressionUUID->"32bd6356-0e4f-4b1e-ae04-2d4fe07c4a05"],
+Cell[7325, 218, 154, 3, 30, "Input",ExpressionUUID->"fa0757b0-9697-4e0a-80da-8537a4db42fc"],
+Cell[7482, 223, 341, 5, 52, "Input",ExpressionUUID->"785c335c-5530-4baf-8d14-4fc4950a9bbe"],
+Cell[7826, 230, 151, 3, 30, "Input",ExpressionUUID->"05056bd4-0b98-448c-8281-288532fd794f"]
+}
+]
+*)
+
