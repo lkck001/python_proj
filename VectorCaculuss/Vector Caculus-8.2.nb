@@ -1,0 +1,592 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20787,        584]
+NotebookOptionsPosition[     19852,        559]
+NotebookOutlinePosition[     20255,        575]
+CellTagsIndexPosition[     20212,        572]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Clear", " ", "all", " ", "global", " ", "variables", " ", "and", " ", 
+    "definitions"}], "*)"}], 
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Define", " ", "the", " ", "vector", " ", "field", " ", "F"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"F", "[", 
+      RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Compute", " ", "the", " ", "curl", " ", "of", " ", "F"}], "*)"}],
+    "\n", 
+   RowBox[{
+    RowBox[{"curlF", "=", 
+     RowBox[{"Curl", "[", 
+      RowBox[{
+       RowBox[{"F", "[", 
+        RowBox[{"x", ",", "y", ",", "z"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Parametric", " ", "representation", " ", "of", " ", "the", " ", "upper", 
+     " ", "hemisphere"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"R", "=", "1"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"phi", "=", 
+     RowBox[{"Symbol", "[", "\"\<phi\>\"", "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"theta", "=", 
+     RowBox[{"Symbol", "[", "\"\<theta\>\"", "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"r", "[", 
+      RowBox[{"phi_", ",", "theta_"}], "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"R", " ", 
+        RowBox[{"Sin", "[", "phi", "]"}], " ", 
+        RowBox[{"Cos", "[", "theta", "]"}]}], ",", 
+       RowBox[{"R", " ", 
+        RowBox[{"Sin", "[", "phi", "]"}], " ", 
+        RowBox[{"Sin", "[", "theta", "]"}]}], ",", 
+       RowBox[{"R", " ", 
+        RowBox[{"Cos", "[", "phi", "]"}]}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Compute", " ", "the", " ", "tangent", " ", "vectors"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Tphi", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"r", "[", 
+        RowBox[{"phi", ",", "theta"}], "]"}], ",", "phi"}], "]"}]}], ";"}], 
+   "\n", 
+   RowBox[{
+    RowBox[{"Ttheta", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"r", "[", 
+        RowBox[{"phi", ",", "theta"}], "]"}], ",", "theta"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "normal", " ", "vector", " ", "using", " ", 
+     "the", " ", "cross", " ", "product"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"nParametric", "=", 
+     RowBox[{"Cross", "[", 
+      RowBox[{"Tphi", ",", "Ttheta"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Express", " ", "curlF", " ", "in", " ", "terms", " ", "of", " ", "phi", 
+     " ", "and", " ", "theta"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"curlFparametric", "=", 
+     RowBox[{"curlF", "/.", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"x", "->", 
+         RowBox[{"R", " ", 
+          RowBox[{"Sin", "[", "phi", "]"}], " ", 
+          RowBox[{"Cos", "[", "theta", "]"}]}]}], ",", 
+        RowBox[{"y", "->", 
+         RowBox[{"R", " ", 
+          RowBox[{"Sin", "[", "phi", "]"}], " ", 
+          RowBox[{"Sin", "[", "theta", "]"}]}]}], ",", 
+        RowBox[{"z", "->", 
+         RowBox[{"R", " ", 
+          RowBox[{"Cos", "[", "phi", "]"}]}]}]}], "}"}]}]}], ";"}], "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "dot", " ", "product", " ", "of", " ", 
+     "curlFparametric", " ", "and", " ", "nParametric"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dotProductParametric", "=", 
+     RowBox[{"curlFparametric", ".", "nParametric"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Integrate", " ", "the", " ", "dot", " ", "product", " ", "over", " ", 
+     "the", " ", "upper", " ", "hemisphere"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"surfaceIntegral", "=", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{"dotProductParametric", " ", 
+        RowBox[{"Sin", "[", "phi", "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"phi", ",", "0", ",", 
+         RowBox[{"Pi", "/", "2"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"theta", ",", "0", ",", 
+         RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Parametric", " ", "representation", " ", "of", " ", "the", " ", 
+     "boundary", " ", "of", " ", "S"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"rBoundary", "[", "theta_", "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"R", " ", 
+        RowBox[{"Cos", "[", "theta", "]"}]}], ",", 
+       RowBox[{"R", " ", 
+        RowBox[{"Sin", "[", "theta", "]"}]}], ",", "0"}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "tangent", " ", "vector", " ", "for", " ", 
+     "the", " ", "boundary"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"TthetaBoundary", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"rBoundary", "[", "theta", "]"}], ",", "theta"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Express", " ", "F", " ", "in", " ", "terms", " ", "of", " ", "theta", 
+     " ", "for", " ", "the", " ", "boundary"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"Fboundary", "=", 
+     RowBox[{"F", "@@", 
+      RowBox[{"rBoundary", "[", "theta", "]"}]}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "dot", " ", "product", " ", "of", " ", 
+     "Fboundary", " ", "and", " ", "TthetaBoundary"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dotProductBoundary", "=", 
+     RowBox[{"Fboundary", ".", "TthetaBoundary"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Integrate", " ", "the", " ", "dot", " ", "product", " ", "over", " ", 
+     "the", " ", "boundary"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"boundaryIntegral", "=", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{"dotProductBoundary", ",", 
+       RowBox[{"{", 
+        RowBox[{"theta", ",", "0", ",", 
+         RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Display", " ", "the", " ", "results"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"surfaceIntegral", ",", "boundaryIntegral"}], "}"}], 
+   "\n"}]}]], "Input",
+ CellChangeTimes->{{3.9035795493460445`*^9, 3.903579549347045*^9}, {
+   3.903579616604192*^9, 3.903579639814525*^9}, {3.9035796949561734`*^9, 
+   3.9035797050478544`*^9}, 3.9035797666548214`*^9, {3.9035797974649568`*^9, 
+   3.903579802498665*^9}, {3.9035798633869224`*^9, 3.9035798985497336`*^9}, {
+   3.9035800500239143`*^9, 3.9035801188150682`*^9}},
+ CellLabel->
+  "In[239]:=",ExpressionUUID->"4cfa022a-ccd9-458d-ad6a-b64e72686b29"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{{3.9035796178306146`*^9, 3.903579640420622*^9}, {
+   3.903579695584383*^9, 3.903579705615485*^9}, {3.9035797498608527`*^9, 
+   3.9035797679952755`*^9}, 3.903579803835331*^9, {3.903580077843959*^9, 
+   3.903580119690003*^9}},
+ CellLabel->
+  "Out[257]=",ExpressionUUID->"170dda53-e24f-4ba6-b9d4-b8731d1c2fa9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Clear", " ", "all", " ", "global", " ", "variables", " ", "and", " ", 
+    "definitions"}], "*)"}], 
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Define", " ", "the", " ", "vector", " ", "field", " ", "F"}], 
+    "*)"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"F", "[", 
+      RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", "x", ",", 
+       RowBox[{
+        RowBox[{"2", " ", "z", " ", "x"}], "+", 
+        RowBox[{"2", " ", "x", " ", "y"}]}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Compute", " ", "the", " ", "curl", " ", "of", " ", "F"}], "*)"}],
+    "\n", 
+   RowBox[{
+    RowBox[{"curlF", "=", 
+     RowBox[{"Curl", "[", 
+      RowBox[{
+       RowBox[{"F", "[", 
+        RowBox[{"x", ",", "y", ",", "z"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Parametric", " ", "representation", " ", "of", " ", "the", " ", 
+     "surface", " ", "S"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"u", "=", 
+     RowBox[{"Symbol", "[", "\"\<u\>\"", "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"v", "=", 
+     RowBox[{"Symbol", "[", "\"\<v\>\"", "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"r", "[", 
+      RowBox[{"u_", ",", "v_"}], "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{"u", ",", "v", ",", 
+       RowBox[{"1", "-", 
+        RowBox[{"u", "^", "2"}], "-", 
+        RowBox[{"v", "^", "2"}]}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Compute", " ", "the", " ", "tangent", " ", "vectors"}], "*)"}], 
+   "\n", 
+   RowBox[{
+    RowBox[{"Tu", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"r", "[", 
+        RowBox[{"u", ",", "v"}], "]"}], ",", "u"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Tv", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"r", "[", 
+        RowBox[{"u", ",", "v"}], "]"}], ",", "v"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "normal", " ", "vector", " ", "using", " ", 
+     "the", " ", "cross", " ", "product"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"nParametric", "=", 
+     RowBox[{"Cross", "[", 
+      RowBox[{"Tu", ",", "Tv"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Express", " ", "curlF", " ", "in", " ", "terms", " ", "of", " ", "u", 
+     " ", "and", " ", "v"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"curlFparametric", "=", 
+     RowBox[{"curlF", "/.", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"x", "->", "u"}], ",", 
+        RowBox[{"y", "->", "v"}], ",", 
+        RowBox[{"z", "->", 
+         RowBox[{"1", "-", 
+          RowBox[{"u", "^", "2"}], "-", 
+          RowBox[{"v", "^", "2"}]}]}]}], "}"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "dot", " ", "product", " ", "of", " ", 
+     "curlFparametric", " ", "and", " ", "nParametric"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dotProductParametric", "=", 
+     RowBox[{"curlFparametric", ".", "nParametric"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Integrate", " ", "the", " ", "dot", " ", "product", " ", "over", " ", 
+     "the", " ", "surface", " ", "S", " ", "using", " ", "ImplicitRegion"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"surfaceIntegral", "=", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{"dotProductParametric", ",", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"u", ",", "v"}], "}"}], "\[Element]", 
+        RowBox[{"ImplicitRegion", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "^", "2"}], "+", 
+            RowBox[{"v", "^", "2"}]}], "<=", "1"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"u", ",", "v"}], "}"}]}], "]"}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Parametric", " ", "representation", " ", "of", " ", "the", " ", 
+     "boundary", " ", "of", " ", "S"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"theta", "=", 
+     RowBox[{"Symbol", "[", "\"\<theta\>\"", "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"rBoundary", "[", "theta_", "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", "theta", "]"}], ",", 
+       RowBox[{"Sin", "[", "theta", "]"}], ",", "0"}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "tangent", " ", "vector", " ", "for", " ", 
+     "the", " ", "boundary"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"TthetaBoundary", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"rBoundary", "[", "theta", "]"}], ",", "theta"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Express", " ", "F", " ", "in", " ", "terms", " ", "of", " ", "theta", 
+     " ", "for", " ", "the", " ", "boundary"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"Fboundary", "=", 
+     RowBox[{"F", "@@", 
+      RowBox[{"rBoundary", "[", "theta", "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "dot", " ", "product", " ", "of", " ", 
+     "Fboundary", " ", "and", " ", "TthetaBoundary"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"dotProductBoundary", "=", 
+     RowBox[{"Fboundary", ".", "TthetaBoundary"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Integrate", " ", "the", " ", "dot", " ", "product", " ", "over", " ", 
+     "the", " ", "boundary"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"boundaryIntegral", "=", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{"dotProductBoundary", ",", 
+       RowBox[{"{", 
+        RowBox[{"theta", ",", "0", ",", 
+         RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Display", " ", "the", " ", "results"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"surfaceIntegral", ",", "boundaryIntegral"}], "}"}], 
+   "\n"}]}]], "Input",
+ CellChangeTimes->{{3.9035804809430513`*^9, 3.903580484403466*^9}, {
+  3.903580534088464*^9, 3.903580536937991*^9}, {3.9035810560279236`*^9, 
+  3.903581090004225*^9}},
+ CellLabel->
+  "In[296]:=",ExpressionUUID->"bf139934-adf6-4aae-823e-a7643435d366"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\[Pi]", ",", "\[Pi]"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.9035805701442747`*^9, {3.903581099837146*^9, 3.9035811019262505`*^9}},
+ CellLabel->
+  "Out[314]=",ExpressionUUID->"1f0797ea-fbec-4ae4-aab4-b92bd4b6236d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Clear", " ", "all", " ", "global", " ", "variables", " ", "and", " ", 
+    "definitions"}], "*)"}], 
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+   "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Define", " ", "the", " ", "vector", " ", "field", " ", "F"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"F", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"z", " ", 
+        RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"x", "^", "2"}], " ", "y", " ", "z"}], ",", 
+       RowBox[{"y", " ", "z"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Compute", " ", "the", " ", "curl", " ", "of", " ", "F"}], "*)"}],
+    "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"curlF", "=", 
+     RowBox[{"Curl", "[", 
+      RowBox[{"F", ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{
+     "Parametric", " ", "representation", " ", "of", " ", "the", " ", 
+      "surface", " ", "S", " ", "in", " ", "the", " ", "plane", " ", "z"}], 
+     "=", 
+     RowBox[{"2", "x"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"r", "[", 
+      RowBox[{"u_", ",", "v_"}], "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{"u", ",", "v", ",", 
+       RowBox[{"2", " ", "u"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Compute", " ", "the", " ", "tangent", " ", "vectors"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ru", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"r", "[", 
+        RowBox[{"u", ",", "v"}], "]"}], ",", "u"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"rv", "=", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"r", "[", 
+        RowBox[{"u", ",", "v"}], "]"}], ",", "v"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "normal", " ", "vector", " ", "using", " ", 
+     "the", " ", "cross", " ", "product"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"Cross", "[", 
+      RowBox[{"ru", ",", "rv"}], "]"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Express", " ", "curlF", " ", "in", " ", "terms", " ", "of", " ", "u", 
+     " ", "and", " ", "v"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"curlFparametric", "=", 
+     RowBox[{"curlF", "/.", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"x", "->", "u"}], ",", 
+        RowBox[{"y", "->", "v"}], ",", 
+        RowBox[{"z", "->", 
+         RowBox[{"2", " ", "u"}]}]}], "}"}]}]}], ";"}], "\[IndentingNewLine]",
+    "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Compute", " ", "the", " ", "dot", " ", "product", " ", "of", " ", 
+     "curlFparametric", " ", "and", " ", "n"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dotProduct", "=", 
+     RowBox[{"curlFparametric", ".", "n"}]}], ";", "s"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Integrate", " ", "the", " ", "dot", " ", "product", " ", "over", " ", 
+     "the", " ", "surface", " ", "S"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "The", " ", "limits", " ", "of", " ", "integration", " ", "are", " ", 
+     "determined", " ", "by", " ", "the", " ", "vertices", " ", "of", " ", 
+     "the", " ", "quadrilateral"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"surfaceIntegral", "=", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{"dotProduct", ",", 
+       RowBox[{"{", 
+        RowBox[{"v", ",", "0", ",", "2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"u", ",", 
+         RowBox[{"v", "/", "2"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"v", "+", "4"}], ")"}], "/", "2"}]}], "}"}]}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", "\n", "surfaceIntegral", "\n"}]}]], "Input",
+ CellChangeTimes->{{3.9035826850970945`*^9, 3.903582685098096*^9}, {
+   3.9035827827144127`*^9, 3.903582818981579*^9}, 
+   3.9035954203189*^9},ExpressionUUID->"32af1b2b-8fe0-4578-849c-4ae3cd833ff5"],
+
+Cell[BoxData["52"], "Output",
+ CellChangeTimes->{
+  3.903582686745584*^9, {3.9035827925076575`*^9, 3.903582821655985*^9}},
+ CellLabel->
+  "Out[358]=",ExpressionUUID->"4f7243f0-1380-496a-b8d2-533890f01b5b"]
+}, Open  ]]
+},
+WindowSize->{1440, 747.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (April 11, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f6133c0d-04c6-4b3a-88ec-aa0c6ef29ccf"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 7235, 196, 904, "Input",ExpressionUUID->"4cfa022a-ccd9-458d-ad6a-b64e72686b29"],
+Cell[7818, 220, 400, 8, 32, "Output",ExpressionUUID->"170dda53-e24f-4ba6-b9d4-b8731d1c2fa9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8255, 233, 6818, 189, 923, "Input",ExpressionUUID->"bf139934-adf6-4aae-823e-a7643435d366"],
+Cell[15076, 424, 259, 6, 32, "Output",ExpressionUUID->"1f0797ea-fbec-4ae4-aab4-b92bd4b6236d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15372, 435, 4256, 115, 581, "Input",ExpressionUUID->"32af1b2b-8fe0-4578-849c-4ae3cd833ff5"],
+Cell[19631, 552, 205, 4, 32, "Output",ExpressionUUID->"4f7243f0-1380-496a-b8d2-533890f01b5b"]
+}, Open  ]]
+}
+]
+*)
+
