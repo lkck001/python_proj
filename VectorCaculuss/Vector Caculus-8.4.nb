@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7533,        234]
-NotebookOptionsPosition[      6745,        212]
-NotebookOutlinePosition[      7140,        228]
-CellTagsIndexPosition[      7097,        225]
+NotebookDataLength[      7561,        234]
+NotebookOptionsPosition[      6767,        212]
+NotebookOutlinePosition[      7168,        228]
+CellTagsIndexPosition[      7125,        225]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -63,8 +63,8 @@ Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}], 
-  "\[IndentingNewLine]", "\n", 
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}], "\n", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"Define", " ", "the", " ", "vector", " ", "field", " ", "F"}], 
    "*)"}]}], "\[IndentingNewLine]", 
@@ -78,8 +78,8 @@ Cell[BoxData[{
       RowBox[{"x", "*", 
        RowBox[{"y", "^", "2"}]}], ",", 
       RowBox[{
-       RowBox[{"x", "^", "2"}], "*", "y"}], ",", "y"}], "}"}]}], ";"}], 
-  "\[IndentingNewLine]", "\n", 
+       RowBox[{"x", "^", "2"}], "*", "y"}], ",", "y"}], "}"}]}], ";"}], "\n", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "Parameterization", " ", "r", " ", "of", " ", "the", " ", "lateral", " ", 
@@ -93,8 +93,8 @@ Cell[BoxData[{
     RowBox[{"{", 
      RowBox[{
       RowBox[{"Cos", "[", "theta", "]"}], ",", 
-      RowBox[{"Sin", "[", "theta", "]"}], ",", "z"}], "}"}]}], ";"}], 
-  "\[IndentingNewLine]", "\n", 
+      RowBox[{"Sin", "[", "theta", "]"}], ",", "z"}], "}"}]}], ";"}], "\n", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"Tangent", " ", "vectors", " ", "Ttheta", " ", "and", " ", "Tz"}], 
    "*)"}]}], "\[IndentingNewLine]", 
@@ -110,8 +110,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"Tz", ":=", 
     RowBox[{"{", 
-     RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ";"}], "\[IndentingNewLine]",
-   "\n", 
+     RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ";"}], "\n", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "Normal", " ", "vector", " ", "n", " ", "as", " ", "the", " ", "cross", 
@@ -124,7 +124,7 @@ Cell[BoxData[{
     RowBox[{"Cross", "[", 
      RowBox[{
       RowBox[{"Ttheta", "[", "theta", "]"}], ",", "Tz"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", "\n", 
+  "\n", "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "Contribution", " ", "of", " ", "lateral", " ", "surface", " ", "to", " ", 
@@ -144,8 +144,8 @@ Cell[BoxData[{
         RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
       RowBox[{"{", 
        RowBox[{"z", ",", 
-        RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", "\n", 
+        RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]}], ";"}], "\n", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "Contribution", " ", "of", " ", "top", " ", "cap", " ", "to", " ", "the", 
@@ -166,11 +166,11 @@ Cell[BoxData[{
         RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
       RowBox[{"{", 
        RowBox[{"r", ",", "0", ",", "1"}], "}"}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\n", 
   RowBox[{"(*", 
    RowBox[{
    "Contribution", " ", "of", " ", "bottom", " ", "cap", " ", "to", " ", 
-    "the", " ", "integral"}], "*)"}]}], "\n", 
+    "the", " ", "integral"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"bottomCapContribution", "=", 
@@ -188,10 +188,10 @@ Cell[BoxData[{
        RowBox[{"theta", ",", "0", ",", 
         RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"r", ",", "0", ",", "1"}], "}"}]}], "]"}]}], ";"}], "\n", 
-  "\[IndentingNewLine]", 
+       RowBox[{"r", ",", "0", ",", "1"}], "}"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{"(*", 
-   RowBox[{"Total", " ", "Contribution"}], "*)"}]}], "\[IndentingNewLine]", 
+   RowBox[{"Total", " ", "Contribution"}], "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"totalContribution", "=", 
    RowBox[{
@@ -201,18 +201,18 @@ Cell[BoxData[{
  CellChangeTimes->{{3.904509095739257*^9, 3.904509095744708*^9}, {
   3.904509875916293*^9, 3.9045098760512247`*^9}},
  CellLabel->
-  "In[1565]:=",ExpressionUUID->"47618745-bdde-40eb-a4fa-4e82bac8e763"],
+  "In[253]:=",ExpressionUUID->"47618745-bdde-40eb-a4fa-4e82bac8e763"],
 
 Cell[BoxData["\[Pi]"], "Output",
  CellChangeTimes->{3.90450854191676*^9, 3.904508687145235*^9, 
-  3.9045087905154257`*^9, 3.904509096605172*^9},
+  3.9045087905154257`*^9, 3.904509096605172*^9, 3.9046023533306537`*^9},
  CellLabel->
-  "Out[1575]=",ExpressionUUID->"4e359b96-a026-435f-958e-d08dc83b5e73"]
+  "Out[263]=",ExpressionUUID->"c3ab9579-308a-4d9c-b801-c9cbe56605d6"]
 }, Open  ]]
 },
-WindowSize->{1680, 924},
+WindowSize->{1428, 735.75},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (April 11, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"279b5505-77b3-4a76-a7f9-7860d6b28719"
 ]
@@ -228,13 +228,13 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 485, 14, 52, "Input",ExpressionUUID->"376f5e75-8daa-4949-9836-f6e563d26f66"],
-Cell[1068, 38, 158, 3, 48, "Output",ExpressionUUID->"dae673a5-4625-411b-a167-860652b24c27"]
+Cell[580, 22, 485, 14, 48, "Input",ExpressionUUID->"376f5e75-8daa-4949-9836-f6e563d26f66"],
+Cell[1068, 38, 158, 3, 32, "Output",ExpressionUUID->"dae673a5-4625-411b-a167-860652b24c27"]
 }, Open  ]],
-Cell[1241, 44, 490, 14, 52, "Input",ExpressionUUID->"a83daa39-19ad-45aa-bc4c-6db96b0ed740"],
+Cell[1241, 44, 490, 14, 48, "Input",ExpressionUUID->"a83daa39-19ad-45aa-bc4c-6db96b0ed740"],
 Cell[CellGroupData[{
-Cell[1756, 62, 4742, 141, 598, "Input",ExpressionUUID->"47618745-bdde-40eb-a4fa-4e82bac8e763"],
-Cell[6501, 205, 228, 4, 48, "Output",ExpressionUUID->"4e359b96-a026-435f-958e-d08dc83b5e73"]
+Cell[1756, 62, 4741, 141, 542, "Input",ExpressionUUID->"47618745-bdde-40eb-a4fa-4e82bac8e763"],
+Cell[6500, 205, 251, 4, 32, "Output",ExpressionUUID->"c3ab9579-308a-4d9c-b801-c9cbe56605d6"]
 }, Open  ]]
 }
 ]
