@@ -2265,8 +2265,8 @@ Cell[BoxData[
  CellLabel->"Out[1]=",ExpressionUUID->"fd936473-402c-485c-8325-a3c72372fa36"]
 }, Open  ]]
 },
-WindowSize->{765.75, 531},
-WindowMargins->{{231, Automatic}, {Automatic, 84}},
+WindowSize->{1440, 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (April 11, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"979c63d1-ee41-4485-98b8-ee4bdc5fe8fc"
@@ -2336,7 +2336,7 @@ Cell[108198, 2219, 433, 12, 49, "Output",ExpressionUUID->"db692cbe-210c-4913-a84
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[108668, 2236, 495, 16, 48, "Input",ExpressionUUID->"b51c8b5a-84a2-4e09-9a34-5fd886604191"],
-Cell[109166, 2254, 347, 10, 76, "Output",ExpressionUUID->"fd936473-402c-485c-8325-a3c72372fa36"]
+Cell[109166, 2254, 347, 10, 54, "Output",ExpressionUUID->"fd936473-402c-485c-8325-a3c72372fa36"]
 }, Open  ]]
 }
 ]
