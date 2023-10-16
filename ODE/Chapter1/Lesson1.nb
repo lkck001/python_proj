@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3138,         95]
-NotebookOptionsPosition[      2247,         72]
-NotebookOutlinePosition[      2659,         88]
-CellTagsIndexPosition[      2616,         85]
+NotebookDataLength[     20083,        496]
+NotebookOptionsPosition[     17685,        447]
+NotebookOutlinePosition[     18088,        463]
+CellTagsIndexPosition[     18045,        460]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -65,13 +65,388 @@ Cell[BoxData[""], "Input",
   3.905355543783804*^9}},ExpressionUUID->"73694c42-a779-4d4a-9ccf-\
 f19b8ab1cea1"],
 
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"70", "*", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "0.04"}], ")"}], "^", "n"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.9053555447254095`*^9, 3.9053555447254095`*^9}, {
+  3.9054560919377747`*^9, 3.9054561118443365`*^9}, {3.9054566187958755`*^9, 
+  3.905456636963708*^9}, {3.9054573771579423`*^9, 
+  3.9054573774305906`*^9}},ExpressionUUID->"f013b234-2639-41a1-ae2b-\
+5903bc49f739"],
+
+Cell[BoxData["497.46783423948267`"], "Output",
+ CellChangeTimes->{3.9054561136411457`*^9, 3.9054566375100327`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"5d3cd85b-153e-4c99-84af-a232c2312fec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "0"}], "50"], 
+  RowBox[{"3.6", "*", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", "0.02"}], ")"}], "^", "n"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.90545613825878*^9, 3.9054561528566656`*^9}, {
+   3.9054562164896083`*^9, 3.9054562428204813`*^9}, 3.905456357705531*^9, {
+   3.905456392614771*^9, 3.9054564960042253`*^9}, {3.905456534943965*^9, 
+   3.9054565597945795`*^9}, {3.905456640108738*^9, 3.90545664216506*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"e40b3945-2a35-4cb6-b8b7-5655003bf2d1"],
+
+Cell[BoxData["314.1755621379139`"], "Output",
+ CellChangeTimes->{3.9054561543423634`*^9, 3.9054562485628643`*^9, 
+  3.9054565605388403`*^9, 3.9054566426382003`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"07610adb-04a9-4550-82fe-af96cae719f7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"3000", "/", "1000000"}]], "Input",
+ CellChangeTimes->{{3.905456670050842*^9, 3.905456678265091*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"aa15fa2f-3c1f-46bf-92e1-6d9224613589"],
+
+Cell[BoxData[
+ FractionBox["3", "1000"]], "Output",
+ CellChangeTimes->{3.9054566817762623`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"4280b772-7013-40ac-90b0-e96fb5d6989f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Numerical", "[", 
+  RowBox[{"333", "/", "12"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9054566992616653`*^9, 3.905456749201153*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"376a9472-5a66-4fc3-95e6-9e9179ec1afd"],
+
+Cell[BoxData[
+ RowBox[{"Numerical", "[", 
+  FractionBox["111", "4"], "]"}]], "Output",
+ CellChangeTimes->{{3.9054567010269585`*^9, 3.9054567494132423`*^9}},
+ CellLabel->"Out[13]=",ExpressionUUID->"f619d1bf-246e-4e93-a2a7-3759cfecb675"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"497", "-", "314"}]], "Input",
+ CellChangeTimes->{{3.9054565805052433`*^9, 3.9054565928080883`*^9}, {
+  3.905457343609254*^9, 3.9054573525866504`*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"6def300b-7522-4a2b-9206-32d90843aeb4"],
+
+Cell[BoxData["183"], "Output",
+ CellChangeTimes->{3.9054573531391716`*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"b37e51f4-bf62-4956-8d44-4f311626065e"]
+}, Open  ]],
+
 Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.9053555447254095`*^9, 
-  3.9053555447254095`*^9}},ExpressionUUID->"f013b234-2639-41a1-ae2b-\
-5903bc49f739"]
+ CellChangeTimes->{{3.905457340473898*^9, 
+  3.9054573404748983`*^9}},ExpressionUUID->"f0be13f5-c2c5-4c7c-b21f-\
+e50180d9c536"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "the", " ", "functions"}], "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"f1", "[", "n_", "]"}], ":=", 
+     RowBox[{
+      RowBox[{"70", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", "0.04"}], ")"}], "^", "n"}]}], "-", "70"}]}], 
+    ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"f2", "[", "n_", "]"}], ":=", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"2.8", " ", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1", "+", "0.02"}], ")"}], "^", "k"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "n"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"intersection", "=", 
+       RowBox[{"NSolve", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"f1", "[", "x", "]"}], "==", 
+           RowBox[{"f2", "[", "x", "]"}]}], "&&", 
+          RowBox[{"0", "<=", "x", "<=", "50"}]}], ",", "x"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Check", " ", "if", " ", 
+        RowBox[{"there", "'"}], "s", " ", "a", " ", "solution"}], "*)"}], 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "intersection", "]"}], ">", "0"}], ",", 
+        RowBox[{
+         RowBox[{"point", "=", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"f1", "[", "x", "]"}]}], "}"}], "/.", " ", 
+           RowBox[{"First", "[", "intersection", "]"}]}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"epilog", "=", 
+          RowBox[{"{", 
+           RowBox[{"Red", ",", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", 
+            RowBox[{"Point", "[", "point", "]"}], ",", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"\"\<Intersection: (\>\"", "<>", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"First", "[", "point", "]"}], "]"}], "<>", 
+               "\"\<, \>\"", "<>", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"Last", "[", "point", "]"}], "]"}], "<>", 
+               "\"\<)\>\""}], ",", "point", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}]}], "]"}], ",", 
+            "Blue", ",", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"n1", ",", 
+               RowBox[{"f1", "[", "n1", "]"}]}], "}"}], "]"}], ",", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"\"\<f1(\>\"", "<>", 
+               RowBox[{"ToString", "[", "n1", "]"}], "<>", "\"\<) = \>\"", "<>", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"f1", "[", "n1", "]"}], "]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"n1", ",", 
+                RowBox[{"f1", "[", "n1", "]"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.5", ",", 
+                RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", "Green", ",", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"n2", ",", 
+               RowBox[{"f2", "[", "n2", "]"}]}], "}"}], "]"}], ",", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"\"\<f2(\>\"", "<>", 
+               RowBox[{"ToString", "[", "n2", "]"}], "<>", "\"\<) = \>\"", "<>", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"f2", "[", "n2", "]"}], "]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"n2", ",", 
+                RowBox[{"f2", "[", "n2", "]"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.5", ",", "1"}], "}"}]}], "]"}]}], "}"}]}], ";"}], 
+        ",", 
+        RowBox[{
+         RowBox[{"epilog", "=", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Text", "[", 
+             RowBox[{"\"\<No Intersection Found\>\"", ",", 
+              RowBox[{"{", 
+               RowBox[{"25", ",", 
+                RowBox[{"f1", "[", "25", "]"}]}], "}"}]}], "]"}], ",", "Blue",
+             ",", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"n1", ",", 
+               RowBox[{"f1", "[", "n1", "]"}]}], "}"}], "]"}], ",", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"\"\<f1(\>\"", "<>", 
+               RowBox[{"ToString", "[", "n1", "]"}], "<>", "\"\<) = \>\"", "<>", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"f1", "[", "n1", "]"}], "]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"n1", ",", 
+                RowBox[{"f1", "[", "n1", "]"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.5", ",", 
+                RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", "Green", ",", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"n2", ",", 
+               RowBox[{"f2", "[", "n2", "]"}]}], "}"}], "]"}], ",", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"\"\<f2(\>\"", "<>", 
+               RowBox[{"ToString", "[", "n2", "]"}], "<>", "\"\<) = \>\"", "<>", 
+               RowBox[{"ToString", "[", 
+                RowBox[{"f2", "[", "n2", "]"}], "]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"n2", ",", 
+                RowBox[{"f2", "[", "n2", "]"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.5", ",", "1"}], "}"}]}], "]"}]}], "}"}]}], ";"}]}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{
+       "Plot", " ", "the", " ", "functions", " ", "and", " ", "possibly", " ",
+         "mark", " ", "the", " ", "intersection", " ", "point"}], "*)"}], 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"f1", "[", "x", "]"}], ",", 
+          RowBox[{"f2", "[", "x", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "50"}], "}"}], ",", 
+        RowBox[{"Epilog", "->", "epilog"}], ",", 
+        RowBox[{"PlotLegends", "->", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<70(1 + 0.04)^x\>\"", ",", 
+           "\"\<Sum from 0 to x: 3.6(1 + 0.02)^x\>\""}], "}"}]}], ",", 
+        RowBox[{"AxesLabel", "->", 
+         RowBox[{"{", 
+          RowBox[{"\"\<x\>\"", ",", "\"\<y\>\""}], "}"}]}], ",", 
+        RowBox[{"PlotRange", "->", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "50"}], "}"}], ",", "Automatic"}], "}"}]}]}], 
+       "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"n1", ",", "0", ",", "\"\<Control n for f1\>\""}], "}"}], ",",
+        "0", ",", "50", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"n2", ",", "0", ",", "\"\<Control n for f2\>\""}], "}"}], ",",
+        "0", ",", "50", ",", "1"}], "}"}]}], "]"}], "\n"}]}]], "Input",
+ CellChangeTimes->{{3.9054580602056866`*^9, 3.9054580602056866`*^9}, {
+  3.9054581266993947`*^9, 3.905458128290126*^9}, {3.905458611110716*^9, 
+  3.905458611532716*^9}, {3.905458645954132*^9, 3.9054586468893332`*^9}, {
+  3.9054587614964314`*^9, 3.905458764615811*^9}, {3.9054588306646776`*^9, 
+  3.9054588348556213`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"725ce674-b7f3-4387-a51e-d513d83055bc"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n1$$ = 11, $CellContext`n2$$ = 11, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n1$$], 0, "Control n for f1"}, 0, 50, 1}, {{
+       Hold[$CellContext`n2$$], 0, "Control n for f2"}, 0, 50, 1}}, 
+    Typeset`size$$ = {885.2, {199., 205.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`n1$$ = 0, $CellContext`n2$$ = 0}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`intersection = NSolve[
+          
+          And[$CellContext`f1[$CellContext`x] == \
+$CellContext`f2[$CellContext`x], 0 <= $CellContext`x <= 50], $CellContext`x]; 
+       If[Length[$CellContext`intersection] > 
+         0, $CellContext`point = ReplaceAll[{$CellContext`x, 
+             $CellContext`f1[$CellContext`x]}, 
+            First[$CellContext`intersection]]; $CellContext`epilog = {Red, 
+            PointSize[0.02], 
+            Point[$CellContext`point], 
+            Text["Intersection: (" <> ToString[
+               First[$CellContext`point]] <> ", " <> ToString[
+               Last[$CellContext`point]] <> ")", $CellContext`point, {-1.5, 
+             1.5}], Blue, 
+            PointSize[0.02], 
+            Point[{$CellContext`n1$$, 
+              $CellContext`f1[$CellContext`n1$$]}], 
+            Text["f1(" <> ToString[$CellContext`n1$$] <> ") = " <> ToString[
+               $CellContext`f1[$CellContext`n1$$]], {$CellContext`n1$$, 
+              $CellContext`f1[$CellContext`n1$$]}, {1.5, -1}], Green, 
+            PointSize[0.02], 
+            Point[{$CellContext`n2$$, 
+              $CellContext`f2[$CellContext`n2$$]}], 
+            Text["f2(" <> ToString[$CellContext`n2$$] <> ") = " <> ToString[
+               $CellContext`f2[$CellContext`n2$$]], {$CellContext`n2$$, 
+              $CellContext`f2[$CellContext`n2$$]}, {1.5, 1}]}; 
+         Null, $CellContext`epilog = {
+            Text["No Intersection Found", {25, 
+              $CellContext`f1[25]}], Blue, 
+            PointSize[0.02], 
+            Point[{$CellContext`n1$$, 
+              $CellContext`f1[$CellContext`n1$$]}], 
+            Text["f1(" <> ToString[$CellContext`n1$$] <> ") = " <> ToString[
+               $CellContext`f1[$CellContext`n1$$]], {$CellContext`n1$$, 
+              $CellContext`f1[$CellContext`n1$$]}, {1.5, -1}], Green, 
+            PointSize[0.02], 
+            Point[{$CellContext`n2$$, 
+              $CellContext`f2[$CellContext`n2$$]}], 
+            Text["f2(" <> ToString[$CellContext`n2$$] <> ") = " <> ToString[
+               $CellContext`f2[$CellContext`n2$$]], {$CellContext`n2$$, 
+              $CellContext`f2[$CellContext`n2$$]}, {1.5, 1}]}; Null]; Plot[{
+          $CellContext`f1[$CellContext`x], 
+          $CellContext`f2[$CellContext`x]}, {$CellContext`x, 0, 50}, 
+         Epilog -> $CellContext`epilog, 
+         PlotLegends -> {
+          "70(1 + 0.04)^x", "Sum from 0 to x: 3.6(1 + 0.02)^x"}, 
+         AxesLabel -> {"x", "y"}, PlotRange -> {{0, 50}, Automatic}]), 
+      "Specifications" :> {{{$CellContext`n1$$, 0, "Control n for f1"}, 0, 50,
+          1}, {{$CellContext`n2$$, 0, "Control n for f2"}, 0, 50, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{934., {253.13403309800196`, 258.86596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.905458061748104*^9, 3.9054581301307025`*^9, 
+  3.9054586133505936`*^9, 3.9054586477229853`*^9, 3.9054587655501375`*^9, 
+  3.905458843436385*^9, 3.9055827310867596`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"0ab9ca85-a6b1-4ef5-8282-36908496b965"]
+}, Open  ]],
+
+Cell[BoxData["\n"], "Input",
+ CellChangeTimes->{{3.905457782571562*^9, 
+  3.905457799569948*^9}},ExpressionUUID->"4a55a764-ea91-4678-b476-\
+6d11a9e8bfe0"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.905457793679907*^9, 
+  3.905457796627266*^9}},ExpressionUUID->"21882780-7a84-4a67-9d2c-\
+13b093491ae5"]
 },
-WindowSize->{569.25, 624.75},
-WindowMargins->{{Automatic, -685.5}, {26.25, Automatic}},
+WindowSize->{1440, 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (April 11, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"96f2c18d-ac68-4ad1-bcb5-a88295e4ef24"
@@ -93,10 +468,36 @@ Cell[1245, 41, 166, 2, 32, "Output",ExpressionUUID->"e0c23fb2-9cf9-44e0-bc1e-400
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1448, 48, 298, 7, 28, "Input",ExpressionUUID->"ad55c26e-a3e8-47cb-949c-a93902f7677e"],
-Cell[1749, 57, 168, 2, 54, "Output",ExpressionUUID->"361a3daf-d849-4227-a7d7-98daa4ad1330"]
+Cell[1749, 57, 168, 2, 32, "Output",ExpressionUUID->"361a3daf-d849-4227-a7d7-98daa4ad1330"]
 }, Open  ]],
 Cell[1932, 62, 152, 3, 28, "Input",ExpressionUUID->"73694c42-a779-4d4a-9ccf-f19b8ab1cea1"],
-Cell[2087, 67, 156, 3, 28, "Input",ExpressionUUID->"f013b234-2639-41a1-ae2b-5903bc49f739"]
+Cell[CellGroupData[{
+Cell[2109, 69, 435, 10, 28, "Input",ExpressionUUID->"f013b234-2639-41a1-ae2b-5903bc49f739"],
+Cell[2547, 81, 192, 2, 32, "Output",ExpressionUUID->"5d3cd85b-153e-4c99-84af-a232c2312fec"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2776, 88, 607, 13, 54, "Input",ExpressionUUID->"e40b3945-2a35-4cb6-b8b7-5655003bf2d1"],
+Cell[3386, 103, 242, 3, 32, "Output",ExpressionUUID->"07610adb-04a9-4550-82fe-af96cae719f7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3665, 111, 202, 3, 28, "Input",ExpressionUUID->"aa15fa2f-3c1f-46bf-92e1-6d9224613589"],
+Cell[3870, 116, 173, 3, 48, "Output",ExpressionUUID->"4280b772-7013-40ac-90b0-e96fb5d6989f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4080, 124, 235, 4, 28, "Input",ExpressionUUID->"376a9472-5a66-4fc3-95e6-9e9179ec1afd"],
+Cell[4318, 130, 235, 4, 47, "Output",ExpressionUUID->"f619d1bf-246e-4e93-a2a7-3759cfecb675"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4590, 139, 253, 4, 28, "Input",ExpressionUUID->"6def300b-7522-4a2b-9206-32d90843aeb4"],
+Cell[4846, 145, 153, 2, 32, "Output",ExpressionUUID->"b37e51f4-bf62-4956-8d44-4f311626065e"]
+}, Open  ]],
+Cell[5014, 150, 154, 3, 28, "Input",ExpressionUUID->"f0be13f5-c2c5-4c7c-b21f-e50180d9c536"],
+Cell[CellGroupData[{
+Cell[5193, 157, 7688, 191, 276, "Input",ExpressionUUID->"725ce674-b7f3-4387-a51e-d513d83055bc"],
+Cell[12884, 350, 4473, 84, 531, "Output",ExpressionUUID->"0ab9ca85-a6b1-4ef5-8282-36908496b965"]
+}, Open  ]],
+Cell[17372, 437, 154, 3, 48, "Input",ExpressionUUID->"4a55a764-ea91-4678-b476-6d11a9e8bfe0"],
+Cell[17529, 442, 152, 3, 28, "Input",ExpressionUUID->"21882780-7a84-4a67-9d2c-13b093491ae5"]
 }
 ]
 *)
