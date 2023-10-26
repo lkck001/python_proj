@@ -1,0 +1,172 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6419,        164]
+NotebookOptionsPosition[      5939,        147]
+NotebookOutlinePosition[      6336,        163]
+CellTagsIndexPosition[      6293,        160]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"contourPlot", ",", "parabolaPlot"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"contourPlot", "=", 
+        RowBox[{"ContourPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Log", "[", 
+             RowBox[{"Sqrt", "[", 
+              RowBox[{
+               RowBox[{"2", " ", 
+                RowBox[{"y", "^", "2"}]}], "-", 
+               RowBox[{"x", " ", "y"}], "+", 
+               RowBox[{"x", "^", "2"}]}], "]"}], "]"}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"3", "/", 
+               RowBox[{"Sqrt", "[", "7", "]"}]}], ")"}], " ", 
+             RowBox[{"ArcTan", "[", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"4", " ", "y"}], "-", "x"}], ")"}], "/", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"Sqrt", "[", "7", "]"}], " ", "x"}], ")"}]}], 
+              "]"}]}]}], "==", "3"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", 
+            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", 
+            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+          RowBox[{"Exclusions", "->", 
+           RowBox[{"{", 
+            RowBox[{"x", "==", "0"}], "}"}]}], ",", 
+          RowBox[{"PlotLabel", "->", 
+           RowBox[{"\"\<y = \>\"", "<>", 
+            RowBox[{"ToString", "[", "a", "]"}], "<>", "\"\< x^2\>\""}]}]}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"parabolaPlot", "=", 
+        RowBox[{"Plot", "[", 
+         RowBox[{
+          RowBox[{"a", " ", 
+           RowBox[{"x", "^", "2"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", 
+            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "->", "Red"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Show", "[", 
+        RowBox[{"contourPlot", ",", "parabolaPlot"}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a", ",", "1", ",", "\"\<Coefficient a\>\""}], "}"}], ",", 
+      RowBox[{"-", "3"}], ",", "3", ",", "0.1"}], "}"}]}], "]"}], "\n", "\n", 
+  "\n"}]], "Input",
+ CellChangeTimes->{{3.907207832908395*^9, 3.90720783291151*^9}, {
+  3.90720810224314*^9, 3.907208136384017*^9}, {3.9072081714048*^9, 
+  3.907208230615857*^9}, {3.90720826412671*^9, 3.907208265795725*^9}, {
+  3.9072083491159773`*^9, 3.9072083648392563`*^9}, {3.907208401300815*^9, 
+  3.907208408029875*^9}, {3.907208523717492*^9, 3.907208538982581*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"7adb4489-354b-49f5-9476-de5478692377"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 2.7, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1, "Coefficient a"}, -3, 3, 0.1}}, 
+    Typeset`size$$ = {899., {456., 460.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`a$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`contourPlot$, $CellContext`parabolaPlot$}, \
+$CellContext`contourPlot$ = ContourPlot[Log[
+              Sqrt[
+              2 $CellContext`y^2 - $CellContext`x $CellContext`y + \
+$CellContext`x^2]] + (3/Sqrt[7]) 
+             ArcTan[(4 $CellContext`y - $CellContext`x)/(
+               Sqrt[7] $CellContext`x)] == 
+           3, {$CellContext`x, -5, 5}, {$CellContext`y, -5, 5}, 
+           Exclusions -> {$CellContext`x == 0}, PlotLabel -> 
+           "y = " <> ToString[$CellContext`a$$] <> 
+            " x^2"]; $CellContext`parabolaPlot$ = 
+         Plot[$CellContext`a$$ $CellContext`x^2, {$CellContext`x, -5, 5}, 
+           PlotStyle -> Red]; 
+        Show[$CellContext`contourPlot$, $CellContext`parabolaPlot$]], 
+      "Specifications" :> {{{$CellContext`a$$, 1, "Coefficient a"}, -3, 3, 
+         0.1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{943., {501., 506.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.907207833582142*^9, 3.90720810357299*^9, 3.907208137657791*^9, {
+   3.907208172379842*^9, 3.9072082316408854`*^9}, 3.9072082662802687`*^9, {
+   3.907208350907864*^9, 3.907208435380542*^9}, {3.907208524444269*^9, 
+   3.9072085393940783`*^9}},
+ CellLabel->"Out[44]=",ExpressionUUID->"2871e474-2d94-41bb-99bd-64a9813f091e"]
+}, Open  ]]
+},
+WindowSize->{1422, 824},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"469747f5-105b-470a-862b-af715ed34121"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2787, 70, 199, "Input",ExpressionUUID->"7adb4489-354b-49f5-9476-de5478692377"],
+Cell[3370, 94, 2553, 50, 1026, "Output",ExpressionUUID->"2871e474-2d94-41bb-99bd-64a9813f091e"]
+}, Open  ]]
+}
+]
+*)
+
