@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6419,        164]
-NotebookOptionsPosition[      5939,        147]
-NotebookOutlinePosition[      6336,        163]
-CellTagsIndexPosition[      6293,        160]
+NotebookDataLength[     24669,        617]
+NotebookOptionsPosition[     23064,        580]
+NotebookOutlinePosition[     23460,        596]
+CellTagsIndexPosition[     23417,        593]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -53,13 +53,15 @@ Cell[BoxData[
                RowBox[{"(", 
                 RowBox[{
                  RowBox[{"Sqrt", "[", "7", "]"}], " ", "x"}], ")"}]}], 
-              "]"}]}]}], "==", "3"}], ",", 
+              "]"}]}]}], "==", "0.4"}], ",", 
           RowBox[{"{", 
            RowBox[{"x", ",", 
-            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+            RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
           RowBox[{"{", 
            RowBox[{"y", ",", 
-            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+            RowBox[{
+             RowBox[{"-", "Pi"}], "/", "2"}], ",", 
+            RowBox[{"Pi", "/", "2"}]}], "}"}], ",", 
           RowBox[{"Exclusions", "->", 
            RowBox[{"{", 
             RowBox[{"x", "==", "0"}], "}"}]}], ",", 
@@ -89,18 +91,20 @@ Cell[BoxData[
   3.90720810224314*^9, 3.907208136384017*^9}, {3.9072081714048*^9, 
   3.907208230615857*^9}, {3.90720826412671*^9, 3.907208265795725*^9}, {
   3.9072083491159773`*^9, 3.9072083648392563`*^9}, {3.907208401300815*^9, 
-  3.907208408029875*^9}, {3.907208523717492*^9, 3.907208538982581*^9}},
- CellLabel->"In[44]:=",ExpressionUUID->"7adb4489-354b-49f5-9476-de5478692377"],
+  3.907208408029875*^9}, {3.907208523717492*^9, 3.907208538982581*^9}, {
+  3.9072784198191223`*^9, 3.907278468011969*^9}, {3.9072792971755543`*^9, 
+  3.907279323589992*^9}, {3.907280105733852*^9, 3.9072801405125637`*^9}},
+ CellLabel->"In[62]:=",ExpressionUUID->"7adb4489-354b-49f5-9476-de5478692377"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 2.7, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`a$$ = -0.09999999999999964, Typeset`show$$ =
+     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`a$$], 1, "Coefficient a"}, -3, 3, 0.1}}, 
-    Typeset`size$$ = {899., {456., 460.}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {360., {182., 187.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`a$$ = 1}, 
@@ -117,7 +121,7 @@ $CellContext`contourPlot$ = ContourPlot[Log[
 $CellContext`x^2]] + (3/Sqrt[7]) 
              ArcTan[(4 $CellContext`y - $CellContext`x)/(
                Sqrt[7] $CellContext`x)] == 
-           3, {$CellContext`x, -5, 5}, {$CellContext`y, -5, 5}, 
+           0.4, {$CellContext`x, -3, 3}, {$CellContext`y, (-Pi)/2, Pi/2}, 
            Exclusions -> {$CellContext`x == 0}, PlotLabel -> 
            "y = " <> ToString[$CellContext`a$$] <> 
             " x^2"]; $CellContext`parabolaPlot$ = 
@@ -126,7 +130,7 @@ $CellContext`x^2]] + (3/Sqrt[7])
         Show[$CellContext`contourPlot$, $CellContext`parabolaPlot$]], 
       "Specifications" :> {{{$CellContext`a$$, 1, "Coefficient a"}, -3, 3, 
          0.1}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{943., {501., 506.}},
+     ImageSizeCache->{404., {227., 233.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -141,12 +145,441 @@ $CellContext`x^2]] + (3/Sqrt[7])
   3.907207833582142*^9, 3.90720810357299*^9, 3.907208137657791*^9, {
    3.907208172379842*^9, 3.9072082316408854`*^9}, 3.9072082662802687`*^9, {
    3.907208350907864*^9, 3.907208435380542*^9}, {3.907208524444269*^9, 
-   3.9072085393940783`*^9}},
- CellLabel->"Out[44]=",ExpressionUUID->"2871e474-2d94-41bb-99bd-64a9813f091e"]
+   3.9072085393940783`*^9}, {3.907278438378276*^9, 3.9072784684199142`*^9}, {
+   3.9072793076752863`*^9, 3.907279324014166*^9}, {3.907280107662825*^9, 
+   3.907280141254972*^9}},
+ CellLabel->"Out[62]=",ExpressionUUID->"6c9ab741-dae9-46c8-9bce-b255708186ed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DSolve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "-", 
+        RowBox[{"2", 
+         RowBox[{"y", "[", "x", "]"}]}]}], ")"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"x", "+", 
+         RowBox[{"2", 
+          RowBox[{"y", "[", "x", "]"}]}]}], ")"}], " ", 
+       RowBox[{
+        RowBox[{"y", "'"}], "[", "x", "]"}]}]}], "==", "0"}], ",", 
+    RowBox[{"y", "[", "x", "]"}], ",", "x"}], "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.907278066457466*^9, 3.9072780732525578`*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"8033c0d6-a631-4534-ab94-d9fa9870a2fa"],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"3", " ", 
+       RowBox[{"ArcTan", "[", 
+        FractionBox[
+         RowBox[{
+          RowBox[{"-", "1"}], "+", 
+          FractionBox[
+           RowBox[{"4", " ", 
+            RowBox[{"y", "[", "x", "]"}]}], "x"]}], 
+         SqrtBox["7"]], "]"}]}], 
+      SqrtBox["7"]], "+", 
+     RowBox[{
+      FractionBox["1", "2"], " ", 
+      RowBox[{"Log", "[", 
+       RowBox[{"1", "-", 
+        FractionBox[
+         RowBox[{"y", "[", "x", "]"}], "x"], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox[
+           RowBox[{"y", "[", "x", "]"}], "2"]}], 
+         SuperscriptBox["x", "2"]]}], "]"}]}]}], "\[Equal]", 
+    RowBox[{
+     TemplateBox[{"1"},
+      "C"], "-", 
+     RowBox[{"Log", "[", "x", "]"}]}]}], ",", 
+   RowBox[{"y", "[", "x", "]"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.9072780753909388`*^9},
+ CellLabel->"Out[45]=",ExpressionUUID->"b37dfafc-2c7d-4d00-963c-a078e0e7aeb5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"contourPlot", ",", "parabolaPlot"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"contourPlot", "=", 
+        RowBox[{"ContourPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Log", "[", 
+             RowBox[{"Sqrt", "[", 
+              RowBox[{
+               RowBox[{"2", " ", 
+                RowBox[{"y", "^", "2"}]}], "-", 
+               RowBox[{"x", " ", "y"}], "+", 
+               RowBox[{"x", "^", "2"}]}], "]"}], "]"}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"3", "/", 
+               RowBox[{"Sqrt", "[", "7", "]"}]}], ")"}], " ", 
+             RowBox[{"ArcTan", "[", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"4", " ", "y"}], "-", "x"}], ")"}], "/", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"Sqrt", "[", "7", "]"}], " ", "x"}], ")"}]}], 
+              "]"}]}]}], "==", "1"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", 
+            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", 
+            RowBox[{
+             RowBox[{"-", "Pi"}], "/", "2"}], ",", 
+            RowBox[{"Pi", "/", "2"}]}], "}"}], ",", 
+          RowBox[{"Exclusions", "->", 
+           RowBox[{"{", 
+            RowBox[{"x", "==", "0"}], "}"}]}], ",", 
+          RowBox[{"PlotLabel", "->", 
+           RowBox[{"\"\<y = \>\"", "<>", 
+            RowBox[{"ToString", "[", "a", "]"}], "<>", "\"\< x^2\>\""}]}]}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"parabolaPlot", "=", 
+        RowBox[{"Plot", "[", 
+         RowBox[{
+          RowBox[{"a", " ", 
+           RowBox[{"x", "^", "2"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", 
+            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "->", "Red"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Show", "[", 
+        RowBox[{"contourPlot", ",", "parabolaPlot"}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a", ",", "1", ",", "\"\<Coefficient a\>\""}], "}"}], ",", 
+      RowBox[{"-", "3"}], ",", "3", ",", "0.1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "\"\<Arctan Range\>\""}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"-", "Pi"}], "/", "2"}], ",", 
+      RowBox[{"Pi", "/", "2"}], ",", "0.01", ",", 
+      RowBox[{"ControlType", "->", "Slider"}]}], "}"}]}], "]"}], 
+  "\n"}]], "Input",
+ CellChangeTimes->{{3.907278563989113*^9, 3.907278563993813*^9}, {
+  3.907279108842226*^9, 3.907279116663636*^9}, {3.907279163407427*^9, 
+  3.9072791978976793`*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"1e9209fd-a9fd-4cc4-8767-4dbe263e155d"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 
+    0.10000000000000009`, $CellContext`x$$ = -1.5407963267948965`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1, "Coefficient a"}, -3, 3, 0.1}, {{
+       Hold[$CellContext`x$$], 0, "Arctan Range"}, Rational[-1, 2] Pi, 
+      Rational[1, 2] Pi, 0.01}}, Typeset`size$$ = {673., {339., 343.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`x$$ = 0}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`contourPlot$, $CellContext`parabolaPlot$}, \
+$CellContext`contourPlot$ = ContourPlot[Log[
+              Sqrt[
+              2 $CellContext`y^2 - $CellContext`x$$ $CellContext`y + \
+$CellContext`x$$^2]] + (3/Sqrt[7]) 
+             ArcTan[(4 $CellContext`y - $CellContext`x$$)/(
+               Sqrt[7] $CellContext`x$$)] == 
+           1, {$CellContext`x$$, -5, 5}, {$CellContext`y, (-Pi)/2, Pi/2}, 
+           Exclusions -> {$CellContext`x$$ == 0}, PlotLabel -> 
+           "y = " <> ToString[$CellContext`a$$] <> 
+            " x^2"]; $CellContext`parabolaPlot$ = 
+         Plot[$CellContext`a$$ $CellContext`x$$^2, {$CellContext`x$$, -5, 5}, 
+           PlotStyle -> Red]; 
+        Show[$CellContext`contourPlot$, $CellContext`parabolaPlot$]], 
+      "Specifications" :> {{{$CellContext`a$$, 1, "Coefficient a"}, -3, 3, 
+         0.1}, {{$CellContext`x$$, 0, "Arctan Range"}, Rational[-1, 2] Pi, 
+         Rational[1, 2] Pi, 0.01, ControlType -> Slider}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{717., {397., 403.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.907278564466425*^9, 3.907279119923546*^9, {3.9072791671430387`*^9, 
+   3.90727919836066*^9}},
+ CellLabel->"Out[56]=",ExpressionUUID->"85ad90d5-15f8-44eb-aeba-57394aec9235"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\n"], "Input",
+ CellChangeTimes->{{3.907279050682538*^9, 3.907279077745014*^9}, 
+   3.907279284385743*^9},ExpressionUUID->"efbcb101-8d90-4423-bc2a-\
+189c2f185335"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 0.20000000000000018`, Typeset`show$$ =
+     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1, "Coefficient a"}, -3, 3, 0.1}}, 
+    Typeset`size$$ = {769., {391., 395.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`a$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`contourPlot$, $CellContext`parabolaPlot$}, \
+$CellContext`contourPlot$ = ContourPlot[Log[
+              Sqrt[
+              2 $CellContext`y^2 - $CellContext`x $CellContext`y + \
+$CellContext`x^2]] + (3/Sqrt[7]) Piecewise[{{
+                 
+                 ArcTan[(4 $CellContext`y - $CellContext`x)/(
+                  Sqrt[7] $CellContext`x)], (-Pi)/
+                  2 <= (4 $CellContext`y - $CellContext`x)/(
+                  Sqrt[7] $CellContext`x) <= Pi/2}}, Pi/2] == 
+           1, {$CellContext`x, -5, 5}, {$CellContext`y, -5, 5}, 
+           Exclusions -> {$CellContext`x == 0}, PlotLabel -> 
+           "y = " <> ToString[$CellContext`a$$] <> 
+            " x^2"]; $CellContext`parabolaPlot$ = 
+         Plot[$CellContext`a$$ $CellContext`x^2, {$CellContext`x, -5, 5}, 
+           PlotStyle -> Red]; 
+        Show[$CellContext`contourPlot$, $CellContext`parabolaPlot$]], 
+      "Specifications" :> {{{$CellContext`a$$, 1, "Coefficient a"}, -3, 3, 
+         0.1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{813., {436., 441.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.90727905119051*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"4de38384-151d-4b43-be98-b4c729741a50"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"contourPlot", ",", "curvePlot"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"contourPlot", "=", 
+        RowBox[{"ContourPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"x", "^", "2"}], "+", 
+            RowBox[{"5", " ", 
+             RowBox[{"y", "^", "2"}]}]}], "==", "k"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", 
+            RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", 
+            RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+          RowBox[{"Contours", "->", 
+           RowBox[{"{", "1", "}"}]}], ",", 
+          RowBox[{"ContourShading", "->", "None"}], ",", 
+          RowBox[{"ContourStyle", "->", "Red"}], ",", 
+          RowBox[{"PlotLabel", "->", 
+           RowBox[{"\"\<x^2 + 5y^2 = \>\"", "<>", 
+            RowBox[{"ToString", "[", "k", "]"}]}]}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"curvePlot", "=", 
+        RowBox[{"Plot", "[", 
+         RowBox[{
+          RowBox[{"c", " ", 
+           RowBox[{"x", "^", "5"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", 
+            RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "->", "Blue"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Show", "[", 
+        RowBox[{"contourPlot", ",", "curvePlot"}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", ",", "1", ",", "\"\<Value of k\>\""}], "}"}], ",", "0", 
+      ",", "10", ",", "0.1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"c", ",", "1", ",", "\"\<Value of c\>\""}], "}"}], ",", 
+      RowBox[{"-", "10"}], ",", "10", ",", "0.1"}], "}"}]}], "]"}], 
+  "\n"}]], "Input",
+ CellChangeTimes->{{3.9072805000841*^9, 3.90728050008799*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"85b2f6ef-3486-49f7-ae19-f0d73a37ddbc"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`c$$ = 8., $CellContext`k$$ = 10., 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`k$$], 1, "Value of k"}, 0, 10, 0.1}, {{
+       Hold[$CellContext`c$$], 1, "Value of c"}, -10, 10, 0.1}}, 
+    Typeset`size$$ = {542., {275., 279.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`c$$ = 1, $CellContext`k$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`contourPlot$, $CellContext`curvePlot$}, \
+$CellContext`contourPlot$ = 
+         ContourPlot[$CellContext`x^2 + 
+            5 $CellContext`y^2 == $CellContext`k$$, {$CellContext`x, -10, 
+            10}, {$CellContext`y, -10, 10}, Contours -> {1}, ContourShading -> 
+           None, ContourStyle -> Red, PlotLabel -> 
+           "x^2 + 5y^2 = " <> 
+            ToString[$CellContext`k$$]]; $CellContext`curvePlot$ = 
+         Plot[$CellContext`c$$ $CellContext`x^5, {$CellContext`x, -10, 10}, 
+           PlotStyle -> Blue]; 
+        Show[$CellContext`contourPlot$, $CellContext`curvePlot$]], 
+      "Specifications" :> {{{$CellContext`k$$, 1, "Value of k"}, 0, 10, 
+         0.1}, {{$CellContext`c$$, 1, "Value of c"}, -10, 10, 0.1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{586., {347., 353.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.907280500729542*^9, 3.907280581069744*^9},
+ CellLabel->"Out[63]=",ExpressionUUID->"ac2fadd8-6398-4a6f-af71-0b45be3ba5fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Tan", "[", "\[Theta]", "]"}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Sin", "[", "\[Theta]", "]"}], "+", 
+         RowBox[{"r", " ", 
+          RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+          RowBox[{
+           RowBox[{"\[Theta]", "'"}], "[", "r", "]"}]}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Cos", "[", "\[Theta]", "]"}], "+", 
+         RowBox[{"r", " ", 
+          RowBox[{"(", 
+           RowBox[{"-", 
+            RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ")"}], " ", 
+          RowBox[{
+           RowBox[{"\[Theta]", "'"}], "[", "r", "]"}]}]}], ")"}]}]}], ")"}], 
+    "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{
+       RowBox[{"Tan", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Sin", "[", "\[Theta]", "]"}], "+", 
+          RowBox[{"r", " ", 
+           RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+           RowBox[{
+            RowBox[{"\[Theta]", "'"}], "[", "r", "]"}]}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Cos", "[", "\[Theta]", "]"}], "+", 
+          RowBox[{"r", " ", 
+           RowBox[{"(", 
+            RowBox[{"-", 
+             RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ")"}], " ", 
+           RowBox[{
+            RowBox[{"\[Theta]", "'"}], "[", "r", "]"}]}]}], ")"}]}]}]}], 
+     ")"}]}], "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.907282950594537*^9, 3.907282950598687*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"e40dde6d-4eaf-48c5-a88f-e6d29394891b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "r"}], " ", 
+  RowBox[{
+   SuperscriptBox["\[Theta]", "\[Prime]",
+    MultilineFunction->None], "[", "r", "]"}]}]], "Output",
+ CellChangeTimes->{3.907282951165729*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"e545bf88-1b30-4850-9b0f-06c4c885077b"]
 }, Open  ]]
 },
 WindowSize->{1422, 824},
-WindowMargins->{{12, Automatic}, {Automatic, 24}},
+WindowMargins->{{1, Automatic}, {Automatic, 16}},
 FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"469747f5-105b-470a-862b-af715ed34121"
@@ -163,8 +596,28 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 2787, 70, 199, "Input",ExpressionUUID->"7adb4489-354b-49f5-9476-de5478692377"],
-Cell[3370, 94, 2553, 50, 1026, "Output",ExpressionUUID->"2871e474-2d94-41bb-99bd-64a9813f091e"]
+Cell[580, 22, 3008, 74, 199, "Input",ExpressionUUID->"7adb4489-354b-49f5-9476-de5478692377"],
+Cell[3591, 98, 2730, 52, 502, "Output",ExpressionUUID->"6c9ab741-dae9-46c8-9bce-b255708186ed"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6358, 155, 657, 19, 52, "Input",ExpressionUUID->"8033c0d6-a631-4534-ab94-d9fa9870a2fa"],
+Cell[7018, 176, 1028, 33, 75, "Output",ExpressionUUID->"b37dfafc-2c7d-4d00-963c-a078e0e7aeb5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8083, 214, 2957, 78, 157, "Input",ExpressionUUID->"1e9209fd-a9fd-4cc4-8767-4dbe263e155d"],
+Cell[11043, 294, 2754, 54, 819, "Output",ExpressionUUID->"85ad90d5-15f8-44eb-aeba-57394aec9235"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13834, 353, 177, 3, 52, "Input",ExpressionUUID->"efbcb101-8d90-4423-bc2a-189c2f185335"],
+Cell[14014, 358, 2510, 49, 896, "Output",ExpressionUUID->"4de38384-151d-4b43-be98-b4c729741a50"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16561, 412, 2075, 55, 157, "Input",ExpressionUUID->"85b2f6ef-3486-49f7-ae19-f0d73a37ddbc"],
+Cell[18639, 469, 2397, 46, 719, "Output",ExpressionUUID->"ac2fadd8-6398-4a6f-af71-0b45be3ba5fc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21073, 520, 1687, 48, 52, "Input",ExpressionUUID->"e40dde6d-4eaf-48c5-a88f-e6d29394891b"],
+Cell[22763, 570, 285, 7, 57, "Output",ExpressionUUID->"e545bf88-1b30-4850-9b0f-06c4c885077b"]
 }, Open  ]]
 }
 ]
