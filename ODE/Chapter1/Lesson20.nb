@@ -1,0 +1,169 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5386,        161]
+NotebookOptionsPosition[      4583,        139]
+NotebookOutlinePosition[      4991,        155]
+CellTagsIndexPosition[      4948,        152]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "the", " ", "cubic", " ", "equation"}], "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"cubicEquation", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"m", "^", "2"}], "-", 
+       RowBox[{"3", " ", "m"}], "+", "2"}], "==", "0"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Solve", " ", "the", " ", "cubic", " ", "equation"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"solutions", "=", 
+     RowBox[{"Solve", "[", 
+      RowBox[{"cubicEquation", ",", "m"}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Display", " ", "the", " ", "solutions"}], "*)"}], 
+   "\[IndentingNewLine]", "solutions", "\n"}]}]], "Input",
+ CellChangeTimes->{{3.908847313631302*^9, 3.908847313631302*^9}, {
+  3.9088474440324206`*^9, 3.9088474784584756`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"79be721f-f59f-41a4-a2a3-3a2303b79c85"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"m", "\[Rule]", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"m", "\[Rule]", "2"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.9088473147270155`*^9, {3.9088474622174664`*^9, 3.9088474802456484`*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"a6f7fabb-1b62-4bd8-b39d-dc5a7436efd4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "the", " ", "general", " ", "solution"}], "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"yC", "[", "x_", "]"}], ":=", 
+     RowBox[{
+      RowBox[{"c1", " ", "*", 
+       RowBox[{"E", "^", "x"}]}], "+", 
+      RowBox[{"c2", " ", "*", 
+       RowBox[{"E", "^", 
+        RowBox[{"(", 
+         RowBox[{"2", " ", "x"}], ")"}]}]}]}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Define", " ", "the", " ", "conditions"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"initialConditions", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"yC", "[", "0", "]"}], "==", "1"}], ",", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"D", "[", 
+           RowBox[{
+            RowBox[{"yC", "[", "x", "]"}], ",", "x"}], "]"}], "/.", " ", 
+          RowBox[{"x", "->", "0"}]}], ")"}], "==", "0"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "initialConditions", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Solve", " ", "for", " ", "c1", " ", "and", " ", "c2", " ", "using", " ", 
+     "the", " ", "conditions"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"coefficients", "=", 
+     RowBox[{"Solve", "[", 
+      RowBox[{"initialConditions", ",", 
+       RowBox[{"{", 
+        RowBox[{"c1", ",", "c2"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Display", " ", "the", " ", "values", " ", "of", " ", "c1", " ", "and", 
+     " ", "c2"}], "*)"}], "\n", "coefficients", "\n"}]}]], "Input",
+ CellChangeTimes->{{3.908847641151349*^9, 3.908847669814958*^9}, {
+  3.9088477024257936`*^9, 3.90884777231417*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"37b8ad00-ecd3-47b3-85e3-d9469e1f4a9d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"c1", "+", "c2"}], "\[Equal]", "1"}], ",", 
+   RowBox[{
+    RowBox[{"c1", "+", 
+     RowBox[{"2", " ", "c2"}]}], "\[Equal]", "0"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9088476422706547`*^9, 3.908847670960759*^9}, {
+  3.9088477311492414`*^9, 3.9088477730379505`*^9}},
+ CellLabel->"Out[33]=",ExpressionUUID->"fbf1d23c-68f6-490d-ba25-18491d7c053d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"c1", "\[Rule]", "2"}], ",", 
+    RowBox[{"c2", "\[Rule]", 
+     RowBox[{"-", "1"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.9088476422706547`*^9, 3.908847670960759*^9}, {
+  3.9088477311492414`*^9, 3.9088477730587187`*^9}},
+ CellLabel->"Out[35]=",ExpressionUUID->"96f25291-0024-463a-a8fc-49ccb1f8e3eb"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{Automatic, 255}, {31.5, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (April 11, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"01676fbe-d5c8-4b88-ad11-ea1c9d4b9139"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 963, 25, 162, "Input",ExpressionUUID->"79be721f-f59f-41a4-a2a3-3a2303b79c85"],
+Cell[1546, 49, 359, 9, 32, "Output",ExpressionUUID->"a6f7fabb-1b62-4bd8-b39d-dc5a7436efd4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1942, 63, 1822, 50, 219, "Input",ExpressionUUID->"37b8ad00-ecd3-47b3-85e3-d9469e1f4a9d"],
+Cell[3767, 115, 415, 10, 32, "Output",ExpressionUUID->"fbf1d23c-68f6-490d-ba25-18491d7c053d"],
+Cell[4185, 127, 382, 9, 32, "Output",ExpressionUUID->"96f25291-0024-463a-a8fc-49ccb1f8e3eb"]
+}, Open  ]]
+}
+]
+*)
+
