@@ -1,0 +1,133 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3837,        123]
+NotebookOptionsPosition[      3358,        106]
+NotebookOutlinePosition[      3757,        122]
+CellTagsIndexPosition[      3714,        119]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "Constants", "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"d", "=", "0.0002"}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"diameter", " ", "in", " ", "meters"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"r", "=", 
+     RowBox[{"d", "/", "2"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"radius", " ", "in", " ", "meters"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"rhoGold", "=", "16000"}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"density", " ", "of", " ", "gold", " ", "in", " ", 
+     RowBox[{"kg", "/", 
+      RowBox[{"m", "^", "3"}]}]}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"g", "=", "9.8"}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "acceleration", " ", "due", " ", "to", " ", "gravity", " ", "in", " ", 
+     RowBox[{"m", "/", 
+      RowBox[{"s", "^", "2"}]}]}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"BCorrect", "=", 
+     RowBox[{"1.6", "*", 
+      RowBox[{"10", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "4"}], ")"}]}]}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"B", " ", "value", " ", "in", " ", 
+     RowBox[{"N", "\[CenterDot]", 
+      RowBox[{"s", "/", 
+       RowBox[{"m", "^", "2"}]}]}], " ", "provided"}], "*)"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Mass", " ", "of", " ", "the", " ", "pellet"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"volume", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"4", "/", "3"}], ")"}], " ", "Pi", " ", 
+      RowBox[{"r", "^", "3"}]}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"volume", " ", "in", " ", 
+     RowBox[{"m", "^", "3"}]}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"mass", "=", 
+     RowBox[{"rhoGold", "*", "volume"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"mass", " ", "in", " ", "kg"}], "*)"}], "\[IndentingNewLine]", 
+   "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Terminal", " ", "velocity", " ", "calculation", " ", "using", " ", 
+     "corrected", " ", "B", " ", "and", " ", "D"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"vTerCorrect", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"mass", "*", "g"}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"BCorrect", "*", "d"}], ")"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Output", " ", "the", " ", "calculated", " ", "terminal", " ", 
+     "velocity"}], "*)"}], "\[IndentingNewLine]", "vTerCorrect", 
+   "\n"}]}]], "Input",
+ CellChangeTimes->{{3.92887363655009*^9, 3.928873636554179*^9}},
+ CellLabel->
+  "In[104]:=",ExpressionUUID->"67b90b42-efee-4e97-bd26-1d71f4730015"],
+
+Cell[BoxData["20.52507200345331`"], "Output",
+ CellChangeTimes->{3.928873637210548*^9},
+ CellLabel->
+  "Out[112]=",ExpressionUUID->"8576c1d8-601c-48a4-bfde-f21752d345f9"]
+}, Open  ]]
+},
+WindowSize->{1113, 831},
+WindowMargins->{{Automatic, 199}, {-29, Automatic}},
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e654ea78-4233-4dbf-958f-5b4e467e797a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2589, 76, 347, "Input",ExpressionUUID->"67b90b42-efee-4e97-bd26-1d71f4730015"],
+Cell[3172, 100, 170, 3, 34, "Output",ExpressionUUID->"8576c1d8-601c-48a4-bfde-f21752d345f9"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
